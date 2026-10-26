@@ -29,6 +29,7 @@
 заменяйте DLL на соответствующую полной версии Houdini: несовпадение сборок может вызвать падение.
 
 Справка RU/EN и иконки встроены в DLL. Откройте справку кнопкой **? / Help** нужной ноды. Для Marmoset Bridge укажите путь к установленному Toolbag.
+Разделитель между оглавлением и страницей справки можно перетаскивать, меняя ширину областей.
 
 Пакет имеет статус **Alpha**. Режим Baker в Marmoset Bridge пока не реализован. Совместимость с другими сборками Houdini и другими ОС не заявлена.
 
@@ -55,6 +56,7 @@ Different Houdini builds may share the same preferences folder. When switching b
 replace the DLL with the one matching the full Houdini version: a mismatched DLL may crash Houdini.
 
 RU/EN help and icons are embedded in the DLL. Open a node's reference with its **? / Help** button. For Marmoset Bridge, set the path to your installed Toolbag executable.
+Drag the divider between the Help contents and page to adjust their widths.
 
 This package is **Alpha**. Marmoset Bridge's Baker mode is not implemented yet. Compatibility with other Houdini builds or operating systems is not claimed.
 
