@@ -19,7 +19,10 @@
 выделение петель через A+MMB в T/R/E и исправления ошибок справки и обновления
 панелей.
 
-Ускорены интерактивные трансформации и подсветка предпросмотра, в том числе при временном сглаживании во вьюпорте.
+Обновления предпросмотра трансформаций согласованы с кадрами вьюпорта; подготовленные данные подсветки используются повторно.
+
+В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
+Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
 
 ### Установка
 
@@ -48,7 +51,10 @@ Modeling and UV tools for Houdini:
 Both **22.0.429** and **22.0.368** builds include Global UI Scale support for panels and Help,
 A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
 
-Interactive transforms and preview highlighting are faster, including while viewport subdivision is enabled.
+Transform preview updates follow viewport frames; prepared highlighting data is reused.
+
+In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
+`S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
 
 ### Installation
 
