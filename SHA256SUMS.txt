@@ -1,2 +1,3 @@
 a4eb8e86734eede188be15f5015ea10836a70aa494737072d568c7561ad52f1f  22.0.368/dso/SOP_HModelingTools.dll
+cff694d8589ae1d4456ef217c936e71d5c31323dc68fb80914983abe364522ca  22.0.368/dso/SOP_HModelingTools.so
 52a84fc02bb256fc5ac3d0e84d4e8d5558aecef2a1acaafc91ec123069f0fdf4  22.0.429/dso/SOP_HModelingTools.dll

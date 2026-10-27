@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | **22.0.429** | Windows x64 | [SOP_HModelingTools.dll](22.0.429/dso/SOP_HModelingTools.dll) |
 | **22.0.368** | Windows x64 | [SOP_HModelingTools.dll](22.0.368/dso/SOP_HModelingTools.dll) |
+| **22.0.368** | Linux x86-64 | [SOP_HModelingTools.so](22.0.368/dso/SOP_HModelingTools.so) |
 
 ## Русский
 
@@ -26,19 +27,21 @@
 
 ### Установка
 
-1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки. Пакеты проверены на **22.0.368** и **22.0.429, Windows x64**.
-2. Закройте Houdini. Скопируйте содержимое `<версия>/dso/` в `<HOUDINI_USER_PREF_DIR>/dso/`. В стандартной установке Windows это папка `Documents/houdini22.0/dso/` в профиле пользователя. Создайте `dso`, если её ещё нет; при переопределённой папке настроек используйте свой путь.
+1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена и протестирована коллегой на **Debian 13, x86-64**.
+2. Закройте Houdini. Скопируйте выбранный файл из `<версия>/dso/` в `<HOUDINI_USER_PREF_DIR>/dso/`. В стандартной установке Windows это папка `Documents/houdini22.0/dso/` в профиле пользователя. Создайте `dso`, если её ещё нет; при переопределённой папке настроек используйте свой путь.
 3. Запустите Houdini. Ноды доступны в SOP-меню **Tab → HModeling Tools**.
 
 Разные сборки Houdini могут использовать общую папку настроек. При переходе между ними
-заменяйте DLL на соответствующую полной версии Houdini: несовпадение сборок может вызвать падение.
+заменяйте плагин на соответствующий полной версии Houdini: несовпадение сборок может вызвать падение.
 
-Справка RU/EN и иконки встроены в DLL. Откройте справку кнопкой **? / Help** нужной ноды. Для Marmoset Bridge укажите путь к установленному Toolbag.
+Для Linux требуются **glibc 2.38+** и **libstdc++ с `GLIBCXX_3.4.32`**.
+
+Справка RU/EN и иконки встроены в плагин. Откройте справку кнопкой **? / Help** нужной ноды. Для Marmoset Bridge укажите путь к установленному Toolbag.
 Разделитель между оглавлением и страницей справки можно перетаскивать, меняя ширину областей.
 
-Пакет имеет статус **Alpha**. Режим Baker в Marmoset Bridge пока не реализован. Совместимость с другими сборками Houdini и другими ОС не заявлена.
+Пакет имеет статус **Alpha**. Режим Baker в Marmoset Bridge пока не реализован. Совместимость с другими сборками Houdini и окружениями не заявлена.
 
-Контрольная сумма DLL находится в [SHA256SUMS.txt](SHA256SUMS.txt). Лицензия — [MIT](LICENSE).
+Контрольные суммы плагинов находятся в [SHA256SUMS.txt](SHA256SUMS.txt). Лицензия — [MIT](LICENSE).
 
 ## English
 
@@ -58,16 +61,18 @@ In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits 
 
 ### Installation
 
-1. Choose the folder matching the **full Houdini version**, including its build number. Packages are tested on **22.0.368** and **22.0.429, Windows x64**.
-2. Close Houdini. Copy the contents of `<version>/dso/` into `<HOUDINI_USER_PREF_DIR>/dso/`. On a standard Windows installation this is `Documents/houdini22.0/dso/` in your user profile. Create `dso` if needed; use your configured location if the preferences folder has been overridden.
+1. Choose the folder matching the **full Houdini version**, including its build number, and your platform's file: `.dll` for Windows or `.so` for Linux. Windows x64 is tested on **22.0.368** and **22.0.429**. The Linux **22.0.368** build was provided and tested by a colleague on **Debian 13, x86-64**.
+2. Close Houdini. Copy the selected file from `<version>/dso/` into `<HOUDINI_USER_PREF_DIR>/dso/`. On a standard Windows installation this is `Documents/houdini22.0/dso/` in your user profile. Create `dso` if needed; use your configured location if the preferences folder has been overridden.
 3. Start Houdini. Find the SOP nodes under **Tab → HModeling Tools**.
 
 Different Houdini builds may share the same preferences folder. When switching builds,
-replace the DLL with the one matching the full Houdini version: a mismatched DLL may crash Houdini.
+replace the plugin with the one matching the full Houdini version: a mismatched build may crash Houdini.
 
-RU/EN help and icons are embedded in the DLL. Open a node's reference with its **? / Help** button. For Marmoset Bridge, set the path to your installed Toolbag executable.
+Linux requires **glibc 2.38+** and **libstdc++ providing `GLIBCXX_3.4.32`**.
+
+RU/EN help and icons are embedded in the plugin. Open a node's reference with its **? / Help** button. For Marmoset Bridge, set the path to your installed Toolbag executable.
 Drag the divider between the Help contents and page to adjust their widths.
 
-This package is **Alpha**. Marmoset Bridge's Baker mode is not implemented yet. Compatibility with other Houdini builds or operating systems is not claimed.
+This package is **Alpha**. Marmoset Bridge's Baker mode is not implemented yet. Compatibility with other Houdini builds or environments is not claimed.
 
-The DLL checksum is listed in [SHA256SUMS.txt](SHA256SUMS.txt). License: [MIT](LICENSE).
+Plugin checksums are listed in [SHA256SUMS.txt](SHA256SUMS.txt). License: [MIT](LICENSE).
