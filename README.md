@@ -19,6 +19,8 @@
 выделение петель через A+MMB в T/R/E и исправления ошибок справки и обновления
 панелей.
 
+Ускорены интерактивные трансформации и подсветка предпросмотра, в том числе при временном сглаживании во вьюпорте.
+
 ### Установка
 
 1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки. Пакеты проверены на **22.0.368** и **22.0.429, Windows x64**.
@@ -45,6 +47,8 @@ Modeling and UV tools for Houdini:
 
 Both **22.0.429** and **22.0.368** builds include Global UI Scale support for panels and Help,
 A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
+
+Interactive transforms and preview highlighting are faster, including while viewport subdivision is enabled.
 
 ### Installation
 
