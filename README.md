@@ -22,6 +22,11 @@
 
 Обновления предпросмотра трансформаций согласованы с кадрами вьюпорта; подготовленные данные подсветки используются повторно.
 
+Текущие Windows-сборки добавляют отдельный **Slicer** в меню **Extra** всех компонентов
+Edit Poly и применение прямого среза Cutter при отпускании ЛКМ. **Step Snap** задаёт
+шаг трансформаций при удержании `J` в Edit Poly и UV Editor. Обновлены всплывающие
+панели и справка RU/EN. Linux-пакет сохранён без изменений и пока не включает эти обновления.
+
 В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
 Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
 
@@ -55,6 +60,11 @@ Both **22.0.429** and **22.0.368** builds include Global UI Scale support for pa
 A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
 
 Transform preview updates follow viewport frames; prepared highlighting data is reused.
+
+The current Windows builds add a separate **Slicer** under **Extra** for every Edit Poly
+component mode and apply Cutter's straight slice on LMB release. **Step Snap** uses
+transform increments while holding `J` in Edit Poly and UV Editor. Popup panels and
+RU/EN Help are updated. The Linux package is unchanged and does not yet include these updates.
 
 In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
 `S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
