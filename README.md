@@ -20,14 +20,18 @@
 выделение петель через A+MMB в T/R/E и исправления ошибок справки и обновления
 панелей.
 
-Обновления предпросмотра трансформаций согласованы с кадрами вьюпорта; подготовленные данные подсветки используются повторно.
+Обновления предпросмотра трансформаций, Extrude и Bevel согласованы с отрисовкой вьюпорта;
+промежуточные изменения объединяются, а подготовленные данные подсветки используются повторно.
+Фиолетовая заливка и живое сглаживание SubD сохранены.
 
 Текущие Windows-сборки добавляют отдельный **Slicer** в меню **Extra** всех компонентов
 Edit Poly и применение прямого среза Cutter при отпускании ЛКМ. **Step Snap** задаёт
 шаг трансформаций при удержании `J` в Edit Poly и UV Editor. Обновлены всплывающие
 панели и справка RU/EN. Уменьшено число лишних точек в срезах Cutter/Slicer; исправлена
-видимость подсветки на обратной стороне полигонов. Linux-пакет сохранён без изменений
-и пока не включает эти обновления.
+видимость подсветки на обратной стороне полигонов. Slicer получил Smooth на основе NURBS,
+режим Knife с Reverse side и Series с контролем расстояния во вьюпорте. Зажатое колесо
+перемещает контур целиком, вращение колеса меняет число контуров. Linux-пакет сохранён
+без изменений и пока не включает эти обновления.
 
 В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
 Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
@@ -61,14 +65,17 @@ Modeling and UV tools for Houdini:
 Both **22.0.429** and **22.0.368** builds include Global UI Scale support for panels and Help,
 A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
 
-Transform preview updates follow viewport frames; prepared highlighting data is reused.
+Transform, Extrude and Bevel preview updates follow viewport drawing; intermediate changes
+are coalesced and prepared highlighting data is reused. Violet fill and live SubD are retained.
 
 The current Windows builds add a separate **Slicer** under **Extra** for every Edit Poly
 component mode and apply Cutter's straight slice on LMB release. **Step Snap** uses
 transform increments while holding `J` in Edit Poly and UV Editor. Popup panels and
 RU/EN Help are updated. Cutter/Slicer cuts create fewer redundant points, and cut highlighting
-remains visible on back-facing polygons. The Linux package is unchanged and does not yet
-include these updates.
+remains visible on back-facing polygons. Slicer now includes NURBS-based Smooth, Knife with
+Reverse side, and Series with a viewport spacing control. MMB drag moves the entire contour;
+the wheel changes the contour count. The Linux package is unchanged and does not yet include
+these updates.
 
 In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
 `S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
