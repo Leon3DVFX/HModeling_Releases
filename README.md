@@ -42,6 +42,11 @@ Windows-сборки добавляют три чекера и загрузку 
 Shape и Relative area автоматически отображаются в 2D и штатном 3D. Они тонируют включённый чекер или изображение, сохраняя рисунок; без картинки показывают самостоятельную цветовую заливку. Существующий флажок 3D управляет только текстурой. Штатный SubD сохраняется. Навигация с Alt сохраняет отображение; выход из State ноды, закрытие редактора или перепривязка восстанавливают прежние настройки viewport. Это временное отображение без изменения геометрии, Cd или материалов.
 Изображения загружаются в фоне; предыдущая картинка той же ноды остаётся видимой до готовности новой. Загруженные изображения кэшируются без уменьшения разрешения и сжатия с потерями. Повторно откройте файл для обновления после внешнего изменения. Отсутствующий или неподдерживаемый файл вызывает явное сообщение об ошибке.
 Direction оставляет только подписи ячеек. Repeat и Alpha управляют повтором и прозрачностью фона только в 2D.
+Новые UV-инструменты Windows-сборок: **Orient U/V** поворачивает целый шелл по направлению выбранных компонентов,
+а **Straighten Shell** выпрямляет открытую цепочку точек или рёбер к ближайшей U/V и расслабляет остальной шелл,
+сохраняя Pin UV. Для Straighten сначала снимите Lock Area/Rotation. **Rectangle H/V** можно пробовать на любом
+выбранном шелле; неподдерживаемая топология или конфликт ограничений отклоняет всю операцию с объяснением.
+Граничные цепочки выделения останавливаются на углах и полюсах UV-топологии. Доступны Undo/Redo, повтор `G` и обновлённая справка RU/EN.
 В сохранённом Linux-пакете этих UV-обновлений пока нет; для них нужна новая Linux-сборка.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
@@ -96,6 +101,11 @@ The bottom UV strip provides shape and relative-area diagnostics in 2D and 3D; c
 Shape and Relative area appear automatically in 2D and native 3D. They tint an enabled checker or image while preserving its pattern; without an image they show standalone colors. The existing 3D checkbox controls the texture only. Native SubD is preserved. Alt navigation keeps the display; leaving the node State, closing the editor or rebinding restores previous viewport preferences. This temporary display does not edit geometry, Cd or materials.
 Images load in the background; the previous image for the same node remains visible until the new image is ready. Loaded images are cached without downsampling or lossy conversion. Open the file again to refresh it after an external edit. Unsupported or missing images report an explicit error.
 Direction uses cell IDs only. Repeat and Alpha control tiling and opacity of the 2D background only.
+New UV tools in the Windows builds: **Orient U/V** rotates whole shells using selected components as a direction reference.
+**Straighten Shell** straightens an open point or edge chain to its nearest U/V axis and relaxes the surrounding shell,
+keeping Pin UV exact; unlock shell area/rotation before Straighten. **Rectangle H/V** can be tried on any selected shell;
+unsupported topology or conflicting constraints reject the complete operation with a reason.
+Boundary selection chains stop at topological corners and poles. Native Undo/Redo, repeat `G` and updated RU/EN Help are included.
 The retained Linux package does not yet include these UV additions and needs a new Linux build.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
