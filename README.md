@@ -38,7 +38,10 @@ Edit Poly и применение прямого среза Cutter при отп
 `Alt` + перетаскивание ПКМ плавно меняет масштаб вокруг места нажатия, дополняя зум колесом.
 Активные UDIM-тайлы обозначены тонкой янтарной рамкой и уголками, независимо от выделения UV.
 Windows-сборки добавляют три чекера и загрузку изображения с диска для 2D и штатного 3D-отображения.
-В нижней панели UV доступны диагностика формы и относительной площади; масштаб чекера независим от Texture Res.
+В нижней панели UV доступны диагностика формы и относительной площади для 2D и 3D; масштаб чекера независим от Texture Res.
+Shape и Relative area автоматически отображаются в 2D и штатном 3D. Они тонируют включённый чекер или изображение, сохраняя рисунок; без картинки показывают самостоятельную цветовую заливку. Существующий флажок 3D управляет только текстурой. Штатный SubD сохраняется. Навигация с Alt сохраняет отображение; выход из State ноды, закрытие редактора или перепривязка восстанавливают прежние настройки viewport. Это временное отображение без изменения геометрии, Cd или материалов.
+Изображения загружаются в фоне; предыдущая картинка той же ноды остаётся видимой до готовности новой. Загруженные изображения кэшируются без уменьшения разрешения и сжатия с потерями. Повторно откройте файл для обновления после внешнего изменения. Отсутствующий или неподдерживаемый файл вызывает явное сообщение об ошибке.
+Direction оставляет только подписи ячеек. Repeat и Alpha управляют повтором и прозрачностью фона только в 2D.
 В сохранённом Linux-пакете этих UV-обновлений пока нет; для них нужна новая Linux-сборка.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
@@ -89,7 +92,10 @@ In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits 
 `Alt` + RMB drag smoothly zooms around the press position, alongside wheel zoom.
 Active UDIM tiles have a thin amber frame and corner marks, independently of UV selection.
 The Windows builds add three checkers and disk image loading for 2D and native 3D display.
-The bottom UV strip provides shape and relative-area diagnostics; checker scale is independent of Texture Res.
+The bottom UV strip provides shape and relative-area diagnostics in 2D and 3D; checker scale is independent of Texture Res.
+Shape and Relative area appear automatically in 2D and native 3D. They tint an enabled checker or image while preserving its pattern; without an image they show standalone colors. The existing 3D checkbox controls the texture only. Native SubD is preserved. Alt navigation keeps the display; leaving the node State, closing the editor or rebinding restores previous viewport preferences. This temporary display does not edit geometry, Cd or materials.
+Images load in the background; the previous image for the same node remains visible until the new image is ready. Loaded images are cached without downsampling or lossy conversion. Open the file again to refresh it after an external edit. Unsupported or missing images report an explicit error.
+Direction uses cell IDs only. Repeat and Alpha control tiling and opacity of the 2D background only.
 The retained Linux package does not yet include these UV additions and needs a new Linux build.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
