@@ -37,6 +37,9 @@ Edit Poly и применение прямого среза Cutter при отп
 Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
 `Alt` + перетаскивание ПКМ плавно меняет масштаб вокруг места нажатия, дополняя зум колесом.
 Активные UDIM-тайлы обозначены тонкой янтарной рамкой и уголками, независимо от выделения UV.
+Windows-сборки добавляют три чекера и загрузку изображения с диска для 2D и штатного 3D-отображения.
+В нижней панели UV доступны диагностика формы и относительной площади; масштаб чекера независим от Texture Res.
+В сохранённом Linux-пакете этих UV-обновлений пока нет; для них нужна новая Linux-сборка.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
 
@@ -85,6 +88,9 @@ In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits 
 `S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
 `Alt` + RMB drag smoothly zooms around the press position, alongside wheel zoom.
 Active UDIM tiles have a thin amber frame and corner marks, independently of UV selection.
+The Windows builds add three checkers and disk image loading for 2D and native 3D display.
+The bottom UV strip provides shape and relative-area diagnostics; checker scale is independent of Texture Res.
+The retained Linux package does not yet include these UV additions and needs a new Linux build.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
 
