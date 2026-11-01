@@ -36,6 +36,7 @@ Edit Poly и применение прямого среза Cutter при отп
 В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
 Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
 `Alt` + перетаскивание ПКМ плавно меняет масштаб вокруг места нажатия, дополняя зум колесом.
+Активные UDIM-тайлы обозначены тонкой янтарной рамкой и уголками, независимо от выделения UV.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
 
@@ -83,6 +84,7 @@ these updates.
 In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
 `S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
 `Alt` + RMB drag smoothly zooms around the press position, alongside wheel zoom.
+Active UDIM tiles have a thin amber frame and corner marks, independently of UV selection.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
 
