@@ -24,6 +24,13 @@
 промежуточные изменения объединяются, а подготовленные данные подсветки используются повторно.
 Фиолетовая заливка и живое сглаживание SubD сохранены.
 
+В Windows-сборках Edit Poly добавлены необязательные материалы **Blinn / Clay**,
+интерактивная штатная палитра, общий цвет сетки и **Cavity**. По умолчанию выключены;
+ПКМ на иконке шара открывает настройки, которые сохраняются отдельно для каждой ноды.
+Трансформации UV обновляют текстуру и диагностику в 3D прямо во время жеста, включая SubD.
+Штатное отображение UV Map имеет приоритет. Чекер Color использует цветные полосы,
+Repeat по умолчанию выключен; кнопка загрузки изображения получила отдельную иконку.
+
 Текущие Windows-сборки добавляют отдельный **Slicer** в меню **Extra** всех компонентов
 Edit Poly и применение прямого среза Cutter при отпускании ЛКМ. **Step Snap** задаёт
 шаг трансформаций при удержании `J` в Edit Poly и UV Editor. Обновлены всплывающие
@@ -82,6 +89,13 @@ A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
 
 Transform, Extrude and Bevel preview updates follow viewport drawing; intermediate changes
 are coalesced and prepared highlighting data is reused. Violet fill and live SubD are retained.
+
+The Windows builds add optional Edit Poly **Blinn / Clay** viewport looks, a live
+native color picker, shared wire color and **Cavity**. They start Off; RMB on the
+sphere icon opens settings saved independently for each node. UV transforms update
+3D textures and diagnostics during the gesture, including SubD. Native UV Map display
+takes priority. Color uses directional bands, Repeat starts Off, and Open Image has
+its own icon.
 
 The current Windows builds add a separate **Slicer** under **Extra** for every Edit Poly
 component mode and apply Cutter's straight slice on LMB release. **Step Snap** uses
