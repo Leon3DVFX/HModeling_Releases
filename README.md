@@ -31,6 +31,11 @@
 Штатное отображение UV Map имеет приоритет. Чекер Color использует цветные полосы,
 Repeat по умолчанию выключен; кнопка загрузки изображения получила отдельную иконку.
 
+Clay получил мягкий студийный вид, а Cavity — более чистые акценты мелкого рельефа и
+впадин с настройкой Distance, включая авторские нормали и временный SubD.
+`Ctrl+Backspace` сбрасывает параметры активного предпросмотра к исходным значениям.
+При настройке Soft Selection через `B` + ЛКМ круг соответствует мировому радиусу в масштабе вида.
+
 Текущие Windows-сборки добавляют отдельный **Slicer** в меню **Extra** всех компонентов
 Edit Poly и применение прямого среза Cutter при отпускании ЛКМ. **Step Snap** задаёт
 шаг трансформаций при удержании `J` в Edit Poly и UV Editor. Обновлены всплывающие
@@ -96,6 +101,11 @@ sphere icon opens settings saved independently for each node. UV transforms upda
 3D textures and diagnostics during the gesture, including SubD. Native UV Map display
 takes priority. Color uses directional bands, Repeat starts Off, and Open Image has
 its own icon.
+
+Clay now has a soft studio look, while Cavity provides cleaner fine-detail and
+valley accents with a Distance control, including authored normals and temporary SubD.
+`Ctrl+Backspace` resets the active preview's parameters to factory values.
+While adjusting Soft Selection with `B` + LMB, its circle follows the world-space radius at the current view scale.
 
 The current Windows builds add a separate **Slicer** under **Extra** for every Edit Poly
 component mode and apply Cutter's straight slice on LMB release. **Step Snap** uses
