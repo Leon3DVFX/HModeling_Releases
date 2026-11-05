@@ -62,6 +62,11 @@ Direction оставляет только подписи ячеек. Repeat и A
 В сохранённом Linux-пакете этих UV-обновлений пока нет; для них нужна новая Linux-сборка.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
+В режиме Edges **Resample** обрабатывает выбранные участки сплайна: каждый непрерывный
+участок получает заданное число сегментов. Shift/Ctrl + двойной ЛКМ добавляет или снимает
+цепочки сегментов, включая замкнутые сплайны. Заводской Distance у **Extrude / Bevel**
+теперь равен 0; `Ctrl+Backspace` возвращает его к нулю. Запоминание настроенных значений
+сохранено. Эти изменения доступны в Windows-сборках; Linux-пакет остаётся прежним.
 
 ### Установка
 
@@ -133,6 +138,11 @@ Boundary selection chains stop at topological corners and poles. Native Undo/Red
 The retained Linux package does not yet include these UV additions and needs a new Linux build.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
+In Edges mode, **Resample** processes selected spline runs: each continuous run receives
+the requested segment count. Shift/Ctrl + double LMB adds or removes segment chains,
+including closed splines. Factory **Extrude / Bevel** Distance now starts at 0;
+`Ctrl+Backspace` returns it to zero while ordinary launches retain remembered settings.
+These changes are included in the Windows builds; the Linux package remains unchanged.
 
 ### Installation
 
