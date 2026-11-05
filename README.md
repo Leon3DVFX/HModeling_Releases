@@ -68,6 +68,11 @@ Direction оставляет только подписи ячеек. Repeat и A
 теперь равен 0; `Ctrl+Backspace` возвращает его к нулю. Запоминание настроенных значений
 сохранено. Эти изменения доступны в Windows-сборках; Linux-пакет остаётся прежним.
 
+В Windows UV Editor исправлены ориентация **Unfold**, отметка обратной стороны UV и
+**Rectangle** на лицевых UV. Сохранённые документы не переворачиваются автоматически;
+для ранее зеркальных шеллов используйте **Flip UV**. Без входной полигональной геометрии
+редактор показывает пустой холст и статус подключения без traceback в консоли.
+
 ### Установка
 
 1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена и протестирована коллегой на **Debian 13, x86-64**.
@@ -143,6 +148,11 @@ the requested segment count. Shift/Ctrl + double LMB adds or removes segment cha
 including closed splines. Factory **Extrude / Bevel** Distance now starts at 0;
 `Ctrl+Backspace` returns it to zero while ordinary launches retain remembered settings.
 These changes are included in the Windows builds; the Linux package remains unchanged.
+
+The Windows UV Editor fixes **Unfold** orientation, UV backside classification and
+**Rectangle** on front-facing UVs. Saved documents are not automatically reflected;
+use **Flip UV** for previously mirrored shells. Without polygon input, the editor
+shows an empty canvas and a connection status without a console traceback.
 
 ### Installation
 
