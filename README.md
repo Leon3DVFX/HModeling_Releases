@@ -73,6 +73,12 @@ Direction оставляет только подписи ячеек. Repeat и A
 для ранее зеркальных шеллов используйте **Flip UV**. Без входной полигональной геометрии
 редактор показывает пустой холст и статус подключения без traceback в консоли.
 
+В новом обновлении для Windows Edit Poly получил редактор **MatCap** с живым предпросмотром, настройкой
+градиентов и формы бликов, пресетами и экспортом PNG 512 или 1024 px. Панель остаётся открытой при
+навигации. В UV Editor обычная деформация входа сохраняет UV и пины, неоднозначная смена компонентов
+вызывает предупреждение, а Undo после Stitch возвращает выделение исходной стороны шва.
+Marmoset Bridge хранит отдельный FBX для каждой ноды в сохранённом проекте и сообщает результат импорта.
+
 ### Установка
 
 1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена и протестирована коллегой на **Debian 13, x86-64**.
@@ -153,6 +159,12 @@ The Windows UV Editor fixes **Unfold** orientation, UV backside classification a
 **Rectangle** on front-facing UVs. Saved documents are not automatically reflected;
 use **Flip UV** for previously mirrored shells. Without polygon input, the editor
 shows an empty canvas and a connection status without a console traceback.
+
+This Windows update adds an editable **MatCap** to Edit Poly, with a live preview, light gradients,
+highlight shapes, presets, and 512 or 1024 px PNG export. The panel stays open during viewport
+navigation. UV Editor preserves UVs and pins through input deformation, warns about ambiguous
+component changes, and restores the original seam side selection when undoing Stitch.
+Marmoset Bridge keeps a separate FBX link per node in a saved project and reports the import result.
 
 ### Installation
 
