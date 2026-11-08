@@ -42,8 +42,7 @@ Edit Poly и применение прямого среза Cutter при отп
 панели и справка RU/EN. Уменьшено число лишних точек в срезах Cutter/Slicer; исправлена
 видимость подсветки на обратной стороне полигонов. Slicer получил Smooth на основе NURBS,
 режим Knife с Reverse side и Series с контролем расстояния во вьюпорте. Зажатое колесо
-перемещает контур целиком, вращение колеса меняет число контуров. Linux-пакет сохранён
-без изменений и пока не включает эти обновления.
+перемещает контур целиком, вращение колеса меняет число контуров. Linux-сборка 22.0.368 обновлена отдельным файлом, предоставленным коллегой.
 
 В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
 Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
@@ -59,14 +58,13 @@ Direction оставляет только подписи ячеек. Repeat и A
 сохраняя Pin UV. Для Straighten сначала снимите Lock Area/Rotation. **Rectangle H/V** можно пробовать на любом
 выбранном шелле; неподдерживаемая топология или конфликт ограничений отклоняет всю операцию с объяснением.
 Граничные цепочки выделения останавливаются на углах и полюсах UV-топологии. Доступны Undo/Redo, повтор `G` и обновлённая справка RU/EN.
-В сохранённом Linux-пакете этих UV-обновлений пока нет; для них нужна новая Linux-сборка.
 Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
 вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
 В режиме Edges **Resample** обрабатывает выбранные участки сплайна: каждый непрерывный
 участок получает заданное число сегментов. Shift/Ctrl + двойной ЛКМ добавляет или снимает
 цепочки сегментов, включая замкнутые сплайны. Заводской Distance у **Extrude / Bevel**
 теперь равен 0; `Ctrl+Backspace` возвращает его к нулю. Запоминание настроенных значений
-сохранено. Эти изменения доступны в Windows-сборках; Linux-пакет остаётся прежним.
+сохранено. Состав Linux-сборки может отличаться от текущих Windows-сборок.
 
 В Windows UV Editor исправлены ориентация **Unfold**, отметка обратной стороны UV и
 **Rectangle** на лицевых UV. Сохранённые документы не переворачиваются автоматически;
@@ -79,9 +77,20 @@ Direction оставляет только подписи ячеек. Repeat и A
 вызывает предупреждение, а Undo после Stitch возвращает выделение исходной стороны шва.
 Marmoset Bridge хранит отдельный FBX для каждой ноды в сохранённом проекте и сообщает результат импорта.
 
+
+В текущих Windows-сборках доступен **Hotkey Editor** внизу параметров Edit Poly:
+категории функций, назначение непосредственно в строке и сохранение своего профиля.
+Защищены навигационные и системные сочетания; исправлены повторные срабатывания,
+потеря отпускания клавиш и возврат к Alt-навигации. **B tap/hold** сохранён для Soft Selection.
+Улучшены Undo выделения и его совместная работа с временным SubD.
+HModeling остаётся пакетом моделинга; ноды симуляции развиваются отдельно.
+
+Новая Linux-сборка 368 включает MatCap и UV-инструменты, но не содержит нового
+Hotkey Editor Windows-сборок. Полное совпадение возможностей платформ не заявлено.
+
 ### Установка
 
-1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена и протестирована коллегой на **Debian 13, x86-64**.
+1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена коллегой; формат и версия HDK проверены по файлу. Новый файл здесь не запускался в Linux.
 2. Закройте Houdini. Скопируйте выбранный файл из `<версия>/dso/` в `<HOUDINI_USER_PREF_DIR>/dso/`. В стандартной установке Windows это папка `Documents/houdini22.0/dso/` в профиле пользователя. Создайте `dso`, если её ещё нет; при переопределённой папке настроек используйте свой путь.
 3. Запустите Houdini. Ноды доступны в SOP-меню **Tab → HModeling Tools**.
 
@@ -129,8 +138,7 @@ transform increments while holding `J` in Edit Poly and UV Editor. Popup panels 
 RU/EN Help are updated. Cutter/Slicer cuts create fewer redundant points, and cut highlighting
 remains visible on back-facing polygons. Slicer now includes NURBS-based Smooth, Knife with
 Reverse side, and Series with a viewport spacing control. MMB drag moves the entire contour;
-the wheel changes the contour count. The Linux package is unchanged and does not yet include
-these updates.
+the wheel changes the contour count. Linux 22.0.368 has been updated with a separately supplied build.
 
 In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
 `S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
@@ -146,14 +154,13 @@ New UV tools in the Windows builds: **Orient U/V** rotates whole shells using se
 keeping Pin UV exact; unlock shell area/rotation before Straighten. **Rectangle H/V** can be tried on any selected shell;
 unsupported topology or conflicting constraints reject the complete operation with a reason.
 Boundary selection chains stop at topological corners and poles. Native Undo/Redo, repeat `G` and updated RU/EN Help are included.
-The retained Linux package does not yet include these UV additions and needs a new Linux build.
 The current Windows builds also add **Insert Points** in the main spline marking menu:
 insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
 In Edges mode, **Resample** processes selected spline runs: each continuous run receives
 the requested segment count. Shift/Ctrl + double LMB adds or removes segment chains,
 including closed splines. Factory **Extrude / Bevel** Distance now starts at 0;
 `Ctrl+Backspace` returns it to zero while ordinary launches retain remembered settings.
-These changes are included in the Windows builds; the Linux package remains unchanged.
+The Linux build may differ from the current Windows builds.
 
 The Windows UV Editor fixes **Unfold** orientation, UV backside classification and
 **Rectangle** on front-facing UVs. Saved documents are not automatically reflected;
@@ -166,9 +173,20 @@ navigation. UV Editor preserves UVs and pins through input deformation, warns ab
 component changes, and restores the original seam side selection when undoing Stitch.
 Marmoset Bridge keeps a separate FBX link per node in a saved project and reports the import result.
 
+
+The current Windows builds include **Hotkey Editor** at the bottom of Edit Poly's
+parameters: grouped functions, inline assignment and saved custom profiles.
+Navigation/system shortcuts are protected. Duplicate dispatch, lost key releases
+and return to Alt navigation are fixed. Soft Selection retains **B tap/hold**.
+Selection Undo and its interaction with temporary SubD are improved.
+HModeling remains a modeling package; simulation nodes are developed separately.
+
+The replacement Linux 368 build includes MatCap and UV tools but does not include
+the new Windows Hotkey Editor. Full feature parity between platforms is not claimed.
+
 ### Installation
 
-1. Choose the folder matching the **full Houdini version**, including its build number, and your platform's file: `.dll` for Windows or `.so` for Linux. Windows x64 is tested on **22.0.368** and **22.0.429**. The Linux **22.0.368** build was provided and tested by a colleague on **Debian 13, x86-64**.
+1. Choose the folder matching the **full Houdini version**, including its build number, and your platform's file: `.dll` for Windows or `.so` for Linux. Windows x64 is tested on **22.0.368** and **22.0.429**. The Linux **22.0.368** build was supplied by a colleague; its file format and HDK version were checked. This replacement was not run locally on Linux.
 2. Close Houdini. Copy the selected file from `<version>/dso/` into `<HOUDINI_USER_PREF_DIR>/dso/`. On a standard Windows installation this is `Documents/houdini22.0/dso/` in your user profile. Create `dso` if needed; use your configured location if the preferences folder has been overridden.
 3. Start Houdini. Find the SOP nodes under **Tab → HModeling Tools**.
 
