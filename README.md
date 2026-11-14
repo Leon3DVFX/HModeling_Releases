@@ -16,7 +16,13 @@
 - **UV Editor** — отдельное окно UV с выделением, синхронизированным с 3D-вьюпортом.
 - **Marmoset Bridge** — передача геометрии в Toolbag для рендера.
 
-В обновлении для Windows добавлены **Revolve** для сплайнов и **Normal** для нормалей
+В Windows-сборках добавлен **Align** в меню **Extra** для полигонов, кусков и всей геометрии.
+Он выравнивает по рёбрам, двум или трём точкам либо нормалям, в том числе по видимой
+геометрии с флагом **Template**. Размеры детали сохраняются. **Flip** переворачивает
+деталь вокруг целевой линии. Опоры отмечены круглыми метками.
+Убраны лишние обновления инструмента при навигации с Alt.
+
+В предыдущем обновлении для Windows добавлены **Revolve** для сплайнов и **Normal** для нормалей
 выбранных полигонов. **Fill Hole** переключает шесть штатных режимов колесом мыши.
 Ускорены трансформации в изоляции. Подсказки и встроенная справка RU/EN сокращены.
 
@@ -118,7 +124,12 @@ Modeling and UV tools for Houdini:
 - **UV Editor** — a separate UV window with selection synchronized with the 3D viewport.
 - **Marmoset Bridge** — geometry transfer to Toolbag for rendering.
 
-This Windows update adds **Revolve** for splines and **Normal** for selected polygon
+The Windows builds add **Align** under **Extra** for polygons, pieces and whole geometry.
+It aligns by edges, two or three points, or normals, including on visible **Template**
+geometry. The piece keeps its dimensions. **Flip** turns it around the target line,
+and circular markers show the reference points. Alt navigation skips unnecessary tool updates.
+
+The previous Windows update added **Revolve** for splines and **Normal** for selected polygon
 vertex normals. **Fill Hole** cycles through six native fill modes with the mouse wheel.
 Transforms in isolation are faster. Viewport hints and the embedded RU/EN Help are shorter.
 
