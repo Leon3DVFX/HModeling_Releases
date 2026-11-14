@@ -16,6 +16,10 @@
 - **UV Editor** — отдельное окно UV с выделением, синхронизированным с 3D-вьюпортом.
 - **Marmoset Bridge** — передача геометрии в Toolbag для рендера.
 
+В обновлении для Windows добавлены **Revolve** для сплайнов и **Normal** для нормалей
+выбранных полигонов. **Fill Hole** переключает шесть штатных режимов колесом мыши.
+Ускорены трансформации в изоляции. Подсказки и встроенная справка RU/EN сокращены.
+
 Обе сборки — **22.0.429** и **22.0.368** — включают поддержку Global UI Scale для панелей и справки,
 выделение петель через A+MMB в T/R/E и исправления ошибок справки и обновления
 панелей.
@@ -113,6 +117,10 @@ Modeling and UV tools for Houdini:
 - **Edit Poly** — polygon modeling, curve tools, Soft Selection and operation history.
 - **UV Editor** — a separate UV window with selection synchronized with the 3D viewport.
 - **Marmoset Bridge** — geometry transfer to Toolbag for rendering.
+
+This Windows update adds **Revolve** for splines and **Normal** for selected polygon
+vertex normals. **Fill Hole** cycles through six native fill modes with the mouse wheel.
+Transforms in isolation are faster. Viewport hints and the embedded RU/EN Help are shorter.
 
 Both **22.0.429** and **22.0.368** builds include Global UI Scale support for panels and Help,
 A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
