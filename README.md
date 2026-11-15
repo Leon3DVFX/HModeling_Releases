@@ -2,222 +2,43 @@
 
 [Русский](#русский) · [English](#english)
 
-| Houdini | Platform | Plugin |
+| Houdini | Platform | Download |
 | --- | --- | --- |
-| **22.0.466** | Linux x86-64 | [SOP_HModelingTools.so](22.0.466/dso/SOP_HModelingTools.so) |
-| **22.0.429** | Windows x64 | [SOP_HModelingTools.dll](22.0.429/dso/SOP_HModelingTools.dll) |
-| **22.0.368** | Windows x64 | [SOP_HModelingTools.dll](22.0.368/dso/SOP_HModelingTools.dll) |
-| **22.0.368** | Linux x86-64 | [SOP_HModelingTools.so](22.0.368/dso/SOP_HModelingTools.so) |
+| 22.0.466 | Linux x86-64 | [SOP_HModelingTools.so](22.0.466/dso/SOP_HModelingTools.so) |
+| 22.0.429 | Windows x64 | [SOP_HModelingTools.dll](22.0.429/dso/SOP_HModelingTools.dll) |
+| 22.0.368 | Windows x64 | [SOP_HModelingTools.dll](22.0.368/dso/SOP_HModelingTools.dll) |
+| 22.0.368 | Linux x86-64 | [SOP_HModelingTools.so](22.0.368/dso/SOP_HModelingTools.so) |
 
 ## Русский
 
-Набор инструментов моделирования и UV для Houdini:
-
-- **Edit Poly** — полигональное моделирование, инструменты кривых, Soft Selection и история операций.
-- **UV Editor** — отдельное окно UV с выделением, синхронизированным с 3D-вьюпортом.
-- **Marmoset Bridge** — передача геометрии в Toolbag для рендера.
-
-В Windows-сборках добавлен **Align** в меню **Extra** для полигонов, кусков и всей геометрии.
-Он выравнивает по рёбрам, двум или трём точкам либо нормалям, в том числе по видимой
-геометрии с флагом **Template**. Размеры детали сохраняются. **Flip** переворачивает
-деталь вокруг целевой линии. Опоры отмечены круглыми метками.
-Убраны лишние обновления инструмента при навигации с Alt.
-
-В предыдущем обновлении для Windows добавлены **Revolve** для сплайнов и **Normal** для нормалей
-выбранных полигонов. **Fill Hole** переключает шесть штатных режимов колесом мыши.
-Ускорены трансформации в изоляции. Подсказки и встроенная справка RU/EN сокращены.
-
-Обе сборки — **22.0.429** и **22.0.368** — включают поддержку Global UI Scale для панелей и справки,
-выделение петель через A+MMB в T/R/E и исправления ошибок справки и обновления
-панелей.
-
-Обновления предпросмотра трансформаций, Extrude и Bevel согласованы с отрисовкой вьюпорта;
-промежуточные изменения объединяются, а подготовленные данные подсветки используются повторно.
-Фиолетовая заливка и живое сглаживание SubD сохранены.
-
-В Windows-сборках Edit Poly добавлены необязательные материалы **Blinn / Clay**,
-интерактивная штатная палитра, общий цвет сетки и **Cavity**. По умолчанию выключены;
-ПКМ на иконке шара открывает настройки, которые сохраняются отдельно для каждой ноды.
-Трансформации UV обновляют текстуру и диагностику в 3D прямо во время жеста, включая SubD.
-Штатное отображение UV Map имеет приоритет. Чекер Color использует цветные полосы,
-Repeat по умолчанию выключен; кнопка загрузки изображения получила отдельную иконку.
-
-Clay получил мягкий студийный вид, а Cavity — более чистые акценты мелкого рельефа и
-впадин с настройкой Distance, включая авторские нормали и временный SubD.
-`Ctrl+Backspace` сбрасывает параметры активного предпросмотра к исходным значениям.
-При настройке Soft Selection через `B` + ЛКМ круг соответствует мировому радиусу в масштабе вида.
-
-Текущие Windows-сборки добавляют отдельный **Slicer** в меню **Extra** всех компонентов
-Edit Poly и применение прямого среза Cutter при отпускании ЛКМ. **Step Snap** задаёт
-шаг трансформаций при удержании `J` в Edit Poly и UV Editor. Обновлены всплывающие
-панели и справка RU/EN. Уменьшено число лишних точек в срезах Cutter/Slicer; исправлена
-видимость подсветки на обратной стороне полигонов. Slicer получил Smooth на основе NURBS,
-режим Knife с Reverse side и Series с контролем расстояния во вьюпорте. Зажатое колесо
-перемещает контур целиком, вращение колеса меняет число контуров. Linux-сборка 22.0.368 обновлена отдельным файлом, предоставленным коллегой.
-
-В UV Editor `Q` возвращает режим Select, `T/R/E` включают трансформации, а `D` позволяет настроить рабочий пивот.
-Снэп `S` поддерживает UV-точки, середины рёбер, центры полигонов и целые U/V. Свёрнутая панель Tools оставляет только стрелку.
-`Alt` + перетаскивание ПКМ плавно меняет масштаб вокруг места нажатия, дополняя зум колесом.
-Активные UDIM-тайлы обозначены тонкой янтарной рамкой и уголками, независимо от выделения UV.
-Windows-сборки добавляют три чекера и загрузку изображения с диска для 2D и штатного 3D-отображения.
-В нижней панели UV доступны диагностика формы и относительной площади для 2D и 3D; масштаб чекера независим от Texture Res.
-Shape и Relative area автоматически отображаются в 2D и штатном 3D. Они тонируют включённый чекер или изображение, сохраняя рисунок; без картинки показывают самостоятельную цветовую заливку. Существующий флажок 3D управляет только текстурой. Штатный SubD сохраняется. Навигация с Alt сохраняет отображение; выход из State ноды, закрытие редактора или перепривязка восстанавливают прежние настройки viewport. Это временное отображение без изменения геометрии, Cd или материалов.
-Изображения загружаются в фоне; предыдущая картинка той же ноды остаётся видимой до готовности новой. Загруженные изображения кэшируются без уменьшения разрешения и сжатия с потерями. Повторно откройте файл для обновления после внешнего изменения. Отсутствующий или неподдерживаемый файл вызывает явное сообщение об ошибке.
-Direction оставляет только подписи ячеек. Repeat и Alpha управляют повтором и прозрачностью фона только в 2D.
-Новые UV-инструменты Windows-сборок: **Orient U/V** поворачивает целый шелл по направлению выбранных компонентов,
-а **Straighten Shell** выпрямляет открытую цепочку точек или рёбер к ближайшей U/V и расслабляет остальной шелл,
-сохраняя Pin UV. Для Straighten сначала снимите Lock Area/Rotation. **Rectangle H/V** можно пробовать на любом
-выбранном шелле; неподдерживаемая топология или конфликт ограничений отклоняет всю операцию с объяснением.
-Граничные цепочки выделения останавливаются на углах и полюсах UV-топологии. Доступны Undo/Redo, повтор `G` и обновлённая справка RU/EN.
-Текущие Windows-сборки также добавляют **Insert Points** в основное радиальное меню сплайнов:
-вставку, перемещение и удаление точек полилинии одной партией. Удаление сегментов разделяет сплайн.
-В режиме Edges **Resample** обрабатывает выбранные участки сплайна: каждый непрерывный
-участок получает заданное число сегментов. Shift/Ctrl + двойной ЛКМ добавляет или снимает
-цепочки сегментов, включая замкнутые сплайны. Заводской Distance у **Extrude / Bevel**
-теперь равен 0; `Ctrl+Backspace` возвращает его к нулю. Запоминание настроенных значений
-сохранено. Состав Linux-сборки может отличаться от текущих Windows-сборок.
-
-В Windows UV Editor исправлены ориентация **Unfold**, отметка обратной стороны UV и
-**Rectangle** на лицевых UV. Сохранённые документы не переворачиваются автоматически;
-для ранее зеркальных шеллов используйте **Flip UV**. Без входной полигональной геометрии
-редактор показывает пустой холст и статус подключения без traceback в консоли.
-
-В новом обновлении для Windows Edit Poly получил редактор **MatCap** с живым предпросмотром, настройкой
-градиентов и формы бликов, пресетами и экспортом PNG 512 или 1024 px. Панель остаётся открытой при
-навигации. В UV Editor обычная деформация входа сохраняет UV и пины, неоднозначная смена компонентов
-вызывает предупреждение, а Undo после Stitch возвращает выделение исходной стороны шва.
-Marmoset Bridge хранит отдельный FBX для каждой ноды в сохранённом проекте и сообщает результат импорта.
-
-
-В текущих Windows-сборках доступен **Hotkey Editor** внизу параметров Edit Poly:
-категории функций, назначение непосредственно в строке и сохранение своего профиля.
-Защищены навигационные и системные сочетания; исправлены повторные срабатывания,
-потеря отпускания клавиш и возврат к Alt-навигации. **B tap/hold** сохранён для Soft Selection.
-Улучшены Undo выделения и его совместная работа с временным SubD.
-HModeling остаётся пакетом моделинга; ноды симуляции развиваются отдельно.
-
-Новая Linux-сборка 368 включает MatCap и UV-инструменты, но не содержит нового
-Hotkey Editor Windows-сборок. Полное совпадение возможностей платформ не заявлено.
-
 ### Установка
 
-1. Выберите папку, совпадающую с **полной версией Houdini**, включая номер сборки, и файл своей платформы: `.dll` для Windows или `.so` для Linux. Windows x64 проверена на **22.0.368** и **22.0.429**. Linux-сборка **22.0.368** предоставлена коллегой; формат и версия HDK проверены по файлу. Новый файл здесь не запускался в Linux.
-2. Закройте Houdini. Скопируйте выбранный файл из `<версия>/dso/` в `<HOUDINI_USER_PREF_DIR>/dso/`. В стандартной установке Windows это папка `Documents/houdini22.0/dso/` в профиле пользователя. Создайте `dso`, если её ещё нет; при переопределённой папке настроек используйте свой путь.
+1. Скачайте файл для точной версии Houdini и своей платформы.
+2. Закройте Houdini и скопируйте файл в `$HOUDINI_USER_PREF_DIR/dso/`. Создайте папку `dso`, если её ещё нет. На Windows стандартный путь — `Documents/houdini22.0/dso/` в профиле пользователя.
 3. Запустите Houdini. Ноды доступны в SOP-меню **Tab → HModeling Tools**.
 
-Разные сборки Houdini могут использовать общую папку настроек. При переходе между ними
-заменяйте плагин на соответствующий полной версии Houdini: несовпадение сборок может вызвать падение.
+Если две сборки Houdini используют одну папку настроек, меняйте плагин при смене сборки. Для Linux нужны glibc 2.38+ и libstdc++ с `GLIBCXX_3.4.32`. [Контрольные суммы](SHA256SUMS.txt)
 
-Для Linux требуются **glibc 2.38+** и **libstdc++ с `GLIBCXX_3.4.32`**.
+### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-Справка RU/EN и иконки встроены в плагин. Откройте справку кнопкой **? / Help** нужной ноды. Для Marmoset Bridge укажите путь к установленному Toolbag.
-Разделитель между оглавлением и страницей справки можно перетаскивать, меняя ширину областей.
+- **Refboard** в Edit Poly. Референсы в 2D и на шести плоскостях Studio, зум, прозрачность и привязки, включая ось глубины.
+- Раскладки сохраняются в HIP и переживают выход из State. Компактная панель адаптируется к узкому вьюпорту. Штатный файловый диалог запоминает последнюю папку.
 
-Пакет имеет статус **Alpha**. Режим Baker в Marmoset Bridge пока не реализован. Совместимость с другими сборками Houdini и окружениями не заявлена.
-
-Контрольные суммы плагинов находятся в [SHA256SUMS.txt](SHA256SUMS.txt). Лицензия — [MIT](LICENSE).
+Сборки Linux в таблице относятся к предыдущему выпуску.
 
 ## English
 
-Modeling and UV tools for Houdini:
-
-- **Edit Poly** — polygon modeling, curve tools, Soft Selection and operation history.
-- **UV Editor** — a separate UV window with selection synchronized with the 3D viewport.
-- **Marmoset Bridge** — geometry transfer to Toolbag for rendering.
-
-The Windows builds add **Align** under **Extra** for polygons, pieces and whole geometry.
-It aligns by edges, two or three points, or normals, including on visible **Template**
-geometry. The piece keeps its dimensions. **Flip** turns it around the target line,
-and circular markers show the reference points. Alt navigation skips unnecessary tool updates.
-
-The previous Windows update added **Revolve** for splines and **Normal** for selected polygon
-vertex normals. **Fill Hole** cycles through six native fill modes with the mouse wheel.
-Transforms in isolation are faster. Viewport hints and the embedded RU/EN Help are shorter.
-
-Both **22.0.429** and **22.0.368** builds include Global UI Scale support for panels and Help,
-A+MMB loop selection in T/R/E, and Help and panel refresh fixes.
-
-Transform, Extrude and Bevel preview updates follow viewport drawing; intermediate changes
-are coalesced and prepared highlighting data is reused. Violet fill and live SubD are retained.
-
-The Windows builds add optional Edit Poly **Blinn / Clay** viewport looks, a live
-native color picker, shared wire color and **Cavity**. They start Off; RMB on the
-sphere icon opens settings saved independently for each node. UV transforms update
-3D textures and diagnostics during the gesture, including SubD. Native UV Map display
-takes priority. Color uses directional bands, Repeat starts Off, and Open Image has
-its own icon.
-
-Clay now has a soft studio look, while Cavity provides cleaner fine-detail and
-valley accents with a Distance control, including authored normals and temporary SubD.
-`Ctrl+Backspace` resets the active preview's parameters to factory values.
-While adjusting Soft Selection with `B` + LMB, its circle follows the world-space radius at the current view scale.
-
-The current Windows builds add a separate **Slicer** under **Extra** for every Edit Poly
-component mode and apply Cutter's straight slice on LMB release. **Step Snap** uses
-transform increments while holding `J` in Edit Poly and UV Editor. Popup panels and
-RU/EN Help are updated. Cutter/Slicer cuts create fewer redundant points, and cut highlighting
-remains visible on back-facing polygons. Slicer now includes NURBS-based Smooth, Knife with
-Reverse side, and Series with a viewport spacing control. MMB drag moves the entire contour;
-the wheel changes the contour count. Linux 22.0.368 has been updated with a separately supplied build.
-
-In UV Editor, `Q` returns to Select, `T/R/E` activate transforms, and `D` edits the working pivot.
-`S` snaps to UV points, edge midpoints, polygon centers and integer U/V. Collapsed Tools leave only an arrow.
-`Alt` + RMB drag smoothly zooms around the press position, alongside wheel zoom.
-Active UDIM tiles have a thin amber frame and corner marks, independently of UV selection.
-The Windows builds add three checkers and disk image loading for 2D and native 3D display.
-The bottom UV strip provides shape and relative-area diagnostics in 2D and 3D; checker scale is independent of Texture Res.
-Shape and Relative area appear automatically in 2D and native 3D. They tint an enabled checker or image while preserving its pattern; without an image they show standalone colors. The existing 3D checkbox controls the texture only. Native SubD is preserved. Alt navigation keeps the display; leaving the node State, closing the editor or rebinding restores previous viewport preferences. This temporary display does not edit geometry, Cd or materials.
-Images load in the background; the previous image for the same node remains visible until the new image is ready. Loaded images are cached without downsampling or lossy conversion. Open the file again to refresh it after an external edit. Unsupported or missing images report an explicit error.
-Direction uses cell IDs only. Repeat and Alpha control tiling and opacity of the 2D background only.
-New UV tools in the Windows builds: **Orient U/V** rotates whole shells using selected components as a direction reference.
-**Straighten Shell** straightens an open point or edge chain to its nearest U/V axis and relaxes the surrounding shell,
-keeping Pin UV exact; unlock shell area/rotation before Straighten. **Rectangle H/V** can be tried on any selected shell;
-unsupported topology or conflicting constraints reject the complete operation with a reason.
-Boundary selection chains stop at topological corners and poles. Native Undo/Redo, repeat `G` and updated RU/EN Help are included.
-The current Windows builds also add **Insert Points** in the main spline marking menu:
-insert, move and delete polyline points in one batch. Deleting spline segments splits the curve.
-In Edges mode, **Resample** processes selected spline runs: each continuous run receives
-the requested segment count. Shift/Ctrl + double LMB adds or removes segment chains,
-including closed splines. Factory **Extrude / Bevel** Distance now starts at 0;
-`Ctrl+Backspace` returns it to zero while ordinary launches retain remembered settings.
-The Linux build may differ from the current Windows builds.
-
-The Windows UV Editor fixes **Unfold** orientation, UV backside classification and
-**Rectangle** on front-facing UVs. Saved documents are not automatically reflected;
-use **Flip UV** for previously mirrored shells. Without polygon input, the editor
-shows an empty canvas and a connection status without a console traceback.
-
-This Windows update adds an editable **MatCap** to Edit Poly, with a live preview, light gradients,
-highlight shapes, presets, and 512 or 1024 px PNG export. The panel stays open during viewport
-navigation. UV Editor preserves UVs and pins through input deformation, warns about ambiguous
-component changes, and restores the original seam side selection when undoing Stitch.
-Marmoset Bridge keeps a separate FBX link per node in a saved project and reports the import result.
-
-
-The current Windows builds include **Hotkey Editor** at the bottom of Edit Poly's
-parameters: grouped functions, inline assignment and saved custom profiles.
-Navigation/system shortcuts are protected. Duplicate dispatch, lost key releases
-and return to Alt navigation are fixed. Soft Selection retains **B tap/hold**.
-Selection Undo and its interaction with temporary SubD are improved.
-HModeling remains a modeling package; simulation nodes are developed separately.
-
-The replacement Linux 368 build includes MatCap and UV tools but does not include
-the new Windows Hotkey Editor. Full feature parity between platforms is not claimed.
-
 ### Installation
 
-1. Choose the folder matching the **full Houdini version**, including its build number, and your platform's file: `.dll` for Windows or `.so` for Linux. Windows x64 is tested on **22.0.368** and **22.0.429**. The Linux **22.0.368** build was supplied by a colleague; its file format and HDK version were checked. This replacement was not run locally on Linux.
-2. Close Houdini. Copy the selected file from `<version>/dso/` into `<HOUDINI_USER_PREF_DIR>/dso/`. On a standard Windows installation this is `Documents/houdini22.0/dso/` in your user profile. Create `dso` if needed; use your configured location if the preferences folder has been overridden.
+1. Download the file for your exact Houdini build and platform.
+2. Close Houdini and copy the file into `$HOUDINI_USER_PREF_DIR/dso/`. Create the `dso` folder if needed. On Windows, the default is `Documents/houdini22.0/dso/` in your user profile.
 3. Start Houdini. Find the SOP nodes under **Tab → HModeling Tools**.
 
-Different Houdini builds may share the same preferences folder. When switching builds,
-replace the plugin with the one matching the full Houdini version: a mismatched build may crash Houdini.
+If two Houdini builds share one preferences folder, swap the plugin when switching builds. Linux requires glibc 2.38+ and libstdc++ providing `GLIBCXX_3.4.32`. [Checksums](SHA256SUMS.txt)
 
-Linux requires **glibc 2.38+** and **libstdc++ providing `GLIBCXX_3.4.32`**.
+### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-RU/EN help and icons are embedded in the plugin. Open a node's reference with its **? / Help** button. For Marmoset Bridge, set the path to your installed Toolbag executable.
-Drag the divider between the Help contents and page to adjust their widths.
+- **Refboard** in Edit Poly. References in 2D and on six Studio planes, with zoom, opacity and snapping, including along the depth axis.
+- Layouts persist in the HIP and survive leaving the State. The compact panel adapts to narrow viewports. The Houdini file browser remembers the last folder.
 
-This package is **Alpha**. Marmoset Bridge's Baker mode is not implemented yet. Compatibility with other Houdini builds or environments is not claimed.
-
-Plugin checksums are listed in [SHA256SUMS.txt](SHA256SUMS.txt). License: [MIT](LICENSE).
+The Linux builds in the table are from the previous release.
