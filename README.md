@@ -21,8 +21,8 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **UV Editor.** Pack работает в фоне с прогрессом и отменой. Выбранные шеллы размещаются в свободном месте активных UDIM с заданными отступами, остальные сохраняют координаты.
-- Ускорены Pack, выделение и перетаскивание UV-шеллов. Чекер и Distortion обновляются в 3D во время перетаскивания.
+- **UV Editor.** Unfold и Optimize обрабатывают крупные независимые шеллы параллельно. Ускорено обновление 2D-канваса после массовых операций.
+- Первый Ctrl+Z отменяет активный предпросмотр, движение удерживаемыми стрелками или выполняющийся Pack. Следующее нажатие отменяет последнее применённое действие.
 
 Сборки Linux в таблице относятся к предыдущему выпуску.
 
@@ -38,7 +38,7 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **UV Editor.** Pack runs in the background with progress and cancellation. Selected shells pack into free space in active UDIM tiles with the specified spacing. Other shells keep their coordinates.
-- Pack, shell selection, and dragging are faster. The checker and Distortion update in 3D during a drag.
+- **UV Editor.** Unfold and Optimize process large independent shells in parallel. The 2D canvas updates faster after batch operations.
+- The first Ctrl+Z cancels the active preview, held-arrow move, or running Pack. Press again to undo the last committed edit.
 
 The Linux builds in the table are from the previous release.
