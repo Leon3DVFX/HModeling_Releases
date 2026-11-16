@@ -21,8 +21,8 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **Refboard** по умолчанию выключен. Видимость запоминается для каждой ноды Edit Poly, раскладки общие для HIP. Картинки переиспользуются при переключении между нодами.
-- Вход в Edit Poly ускорен. **Last Action** учитывает видимость и размер осей вьюпорта.
+- **Refboard** стабильнее удерживает привязку при быстрых перемещениях и применяет последнюю позицию курсора при отпускании мыши.
+- При масштабировании привязка следует за угловым маркером. В **Studio** ускорена обработка перетаскивания и исправлен выбор вида в разделённом вьюпорте.
 
 Сборки Linux в таблице относятся к предыдущему выпуску.
 
@@ -38,7 +38,7 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **Refboard** starts off. Visibility is remembered for each Edit Poly node, and layouts are shared in the HIP. Images are reused across node switches.
-- Edit Poly opens faster. **Last Action** adjusts to the viewport gnomon's visibility and size.
+- **Refboard** holds snaps more reliably during fast drags and applies the final pointer position on release.
+- Resize snapping follows the corner handle. **Studio** processes drag input faster and picks the correct view in split layouts.
 
 The Linux builds in the table are from the previous release.
