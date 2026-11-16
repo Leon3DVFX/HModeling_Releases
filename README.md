@@ -25,10 +25,7 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **UV Editor.** Деформация входа сохраняет UV, швы и пины. При конфликте можно перепривязать раскладку по однозначным ID компонентов.
-- **Edit Poly.** Строка **Source** показывает источник геометрии. При `Actions: 0` кнопка **Apply History** недоступна. Старые сохранённые базы поддерживаются.
-
-Сборки Linux в таблице относятся к предыдущему выпуску.
+- **Edit Poly.** Revolve быстрее обновляет предпросмотр на плотных сетках и строит крышку до оси, если её пересекает крайний перпендикулярный сегмент профиля. Одинаковые запросы предпросмотра не запускают повторный расчёт.
 
 ## English
 
@@ -44,7 +41,4 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **UV Editor.** Upstream deformation preserves UVs, seams, and pins. If the input changes, the layout can be rebound when component IDs match unambiguously.
-- **Edit Poly.** **Source** shows where the geometry comes from. **Apply History** is disabled at `Actions: 0`. Existing saved bases remain supported.
-
-The Linux builds in the table are from the previous release.
+- **Edit Poly.** Revolve updates dense previews faster and caps a perpendicular end segment where it crosses the axis. Identical preview requests reuse the previous result.
