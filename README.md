@@ -21,8 +21,8 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **Refboard** стабильнее удерживает привязку при быстрых перемещениях и применяет последнюю позицию курсора при отпускании мыши.
-- При масштабировании привязка следует за угловым маркером. В **Studio** ускорена обработка перетаскивания и исправлен выбор вида в разделённом вьюпорте.
+- **UV Editor.** Pack работает в фоне с прогрессом и отменой. Выбранные шеллы размещаются в свободном месте активных UDIM с заданными отступами, остальные сохраняют координаты.
+- Ускорены Pack, выделение и перетаскивание UV-шеллов. Чекер и Distortion обновляются в 3D во время перетаскивания.
 
 Сборки Linux в таблице относятся к предыдущему выпуску.
 
@@ -38,7 +38,7 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **Refboard** holds snaps more reliably during fast drags and applies the final pointer position on release.
-- Resize snapping follows the corner handle. **Studio** processes drag input faster and picks the correct view in split layouts.
+- **UV Editor.** Pack runs in the background with progress and cancellation. Selected shells pack into free space in active UDIM tiles with the specified spacing. Other shells keep their coordinates.
+- Pack, shell selection, and dragging are faster. The checker and Distortion update in 3D during a drag.
 
 The Linux builds in the table are from the previous release.
