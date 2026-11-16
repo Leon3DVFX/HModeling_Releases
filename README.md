@@ -21,8 +21,8 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **Refboard** в Edit Poly. Референсы в 2D и на шести плоскостях Studio, зум, прозрачность и привязки, включая ось глубины.
-- Раскладки сохраняются в HIP и переживают выход из State. Компактная панель адаптируется к узкому вьюпорту. Штатный файловый диалог запоминает последнюю папку.
+- **Refboard** по умолчанию выключен. Видимость запоминается для каждой ноды Edit Poly, раскладки общие для HIP. Картинки переиспользуются при переключении между нодами.
+- Вход в Edit Poly ускорен. **Last Action** учитывает видимость и размер осей вьюпорта.
 
 Сборки Linux в таблице относятся к предыдущему выпуску.
 
@@ -38,7 +38,7 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **Refboard** in Edit Poly. References in 2D and on six Studio planes, with zoom, opacity and snapping, including along the depth axis.
-- Layouts persist in the HIP and survive leaving the State. The compact panel adapts to narrow viewports. The Houdini file browser remembers the last folder.
+- **Refboard** starts off. Visibility is remembered for each Edit Poly node, and layouts are shared in the HIP. Images are reused across node switches.
+- Edit Poly opens faster. **Last Action** adjusts to the viewport gnomon's visibility and size.
 
 The Linux builds in the table are from the previous release.
