@@ -5,9 +5,11 @@
 | Houdini | Platform | Download |
 | --- | --- | --- |
 | 22.0.466 | Linux x86-64 | [SOP_HModelingTools.so](22.0.466/dso/SOP_HModelingTools.so) |
+| 22.0.466 | macOS arm64 | [SOP_HModelingTools.dylib](22.0.466/dso/SOP_HModelingTools.dylib) |
 | 22.0.429 | Windows x64 | [SOP_HModelingTools.dll](22.0.429/dso/SOP_HModelingTools.dll) |
 | 22.0.368 | Windows x64 | [SOP_HModelingTools.dll](22.0.368/dso/SOP_HModelingTools.dll) |
 | 22.0.368 | Linux x86-64 | [SOP_HModelingTools.so](22.0.368/dso/SOP_HModelingTools.so) |
+| 22.0.368 | macOS arm64 | [SOP_HModelingTools.dylib](22.0.368/dso/SOP_HModelingTools.dylib) |
 
 ## Русский
 
@@ -19,10 +21,12 @@
 
 Если две сборки Houdini используют одну папку настроек, меняйте плагин при смене сборки. Для Linux нужны glibc 2.38+ и libstdc++ с `GLIBCXX_3.4.32`. [Контрольные суммы](SHA256SUMS.txt)
 
+Сборки macOS предназначены для Apple Silicon (arm64). В бинарниках указана минимальная версия macOS 27.2.
+
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **UV Editor.** Unfold и Optimize обрабатывают крупные независимые шеллы параллельно. Ускорено обновление 2D-канваса после массовых операций.
-- Первый Ctrl+Z отменяет активный предпросмотр, движение удерживаемыми стрелками или выполняющийся Pack. Следующее нажатие отменяет последнее применённое действие.
+- **UV Editor.** Деформация входа сохраняет UV, швы и пины. При конфликте можно перепривязать раскладку по однозначным ID компонентов.
+- **Edit Poly.** Строка **Source** показывает источник геометрии. При `Actions: 0` кнопка **Apply History** недоступна. Старые сохранённые базы поддерживаются.
 
 Сборки Linux в таблице относятся к предыдущему выпуску.
 
@@ -36,9 +40,11 @@
 
 If two Houdini builds share one preferences folder, swap the plugin when switching builds. Linux requires glibc 2.38+ and libstdc++ providing `GLIBCXX_3.4.32`. [Checksums](SHA256SUMS.txt)
 
+The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 as their minimum deployment version.
+
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **UV Editor.** Unfold and Optimize process large independent shells in parallel. The 2D canvas updates faster after batch operations.
-- The first Ctrl+Z cancels the active preview, held-arrow move, or running Pack. Press again to undo the last committed edit.
+- **UV Editor.** Upstream deformation preserves UVs, seams, and pins. If the input changes, the layout can be rebound when component IDs match unambiguously.
+- **Edit Poly.** **Source** shows where the geometry comes from. **Apply History** is disabled at `Actions: 0`. Existing saved bases remain supported.
 
 The Linux builds in the table are from the previous release.
