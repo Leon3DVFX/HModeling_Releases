@@ -25,7 +25,7 @@
 
 ### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
 
-- **Edit Poly.** Revolve быстрее обновляет предпросмотр на плотных сетках и строит крышку до оси, если её пересекает крайний перпендикулярный сегмент профиля. Одинаковые запросы предпросмотра не запускают повторный расчёт.
+- **Refboard.** ЦКМ над разблокированным референсом в Images или Studio сдвигает картинку внутри рамки. Alt + ЦКМ двигает камеру. Смещение сохраняется в раскладке.
 
 ## English
 
@@ -41,4 +41,4 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.429 and 22.0.368
 
-- **Edit Poly.** Revolve updates dense previews faster and caps a perpendicular end segment where it crosses the axis. Identical preview requests reuse the previous result.
+- **Refboard.** Middle-drag an unlocked reference in Images or Studio to pan the image inside its frame. Alt + middle-drag pans the camera. The layout saves the image offset.
