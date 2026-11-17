@@ -4,6 +4,7 @@
 
 | Houdini | Platform | Download |
 | --- | --- | --- |
+| 22.0.466 | Windows x64 | [SOP_HModelingTools.dll](22.0.466/dso/SOP_HModelingTools.dll) |
 | 22.0.466 | Linux x86-64 | [SOP_HModelingTools.so](22.0.466/dso/SOP_HModelingTools.so) |
 | 22.0.466 | macOS arm64 | [SOP_HModelingTools.dylib](22.0.466/dso/SOP_HModelingTools.dylib) |
 | 22.0.429 | Windows x64 | [SOP_HModelingTools.dll](22.0.429/dso/SOP_HModelingTools.dll) |
@@ -23,8 +24,9 @@
 
 Сборки macOS предназначены для Apple Silicon (arm64). В бинарниках указана минимальная версия macOS 27.2.
 
-### Последние изменения · Windows x64 · 22.0.429 и 22.0.368
+### Последние изменения · Windows x64
 
+- Добавлена сборка для Houdini 22.0.466.
 - **Refboard.** ЦКМ над разблокированным референсом в Images или Studio сдвигает картинку внутри рамки. Alt + ЦКМ двигает камеру. Смещение сохраняется в раскладке.
 
 ## English
@@ -39,6 +41,7 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 as their minimum deployment version.
 
-### Latest changes · Windows x64 · 22.0.429 and 22.0.368
+### Latest changes · Windows x64
 
+- Added a build for Houdini 22.0.466.
 - **Refboard.** Middle-drag an unlocked reference in Images or Studio to pan the image inside its frame. Alt + middle-drag pans the camera. The layout saves the image offset.
