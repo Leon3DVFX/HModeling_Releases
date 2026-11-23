@@ -24,10 +24,11 @@
 
 Сборки macOS предназначены для Apple Silicon (arm64). В бинарниках указана минимальная версия macOS 27.2.
 
-### Последние изменения · Windows x64
+### Последние изменения · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- Добавлена сборка для Houdini 22.0.466.
-- **Refboard.** ЦКМ над разблокированным референсом в Images или Studio сдвигает картинку внутри рамки. Alt + ЦКМ двигает камеру. Смещение сохраняется в раскладке.
+- **Agent Bridge.** Через MCP доступны инструменты Edit Poly и 38 команд UV Editor, включая Pack с прогрессом и отменой.
+- **Edit Poly.** История сохраняет повторяемые операции с параметрами и контрольными снимками геометрии.
+- **Viewport Shading.** Восстановлена работа Cavity в Houdini 22.0.466.
 
 ## English
 
@@ -41,7 +42,8 @@ If two Houdini builds share one preferences folder, swap the plugin when switchi
 
 The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 as their minimum deployment version.
 
-### Latest changes · Windows x64
+### Latest changes · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- Added a build for Houdini 22.0.466.
-- **Refboard.** Middle-drag an unlocked reference in Images or Studio to pan the image inside its frame. Alt + middle-drag pans the camera. The layout saves the image offset.
+- **Agent Bridge.** MCP exposes Edit Poly tools and 38 UV Editor commands, including Pack with progress and cancellation.
+- **Edit Poly.** History stores replayable operations with parameters and geometry checkpoints.
+- **Viewport Shading.** Restored Cavity in Houdini 22.0.466.
