@@ -26,9 +26,7 @@
 
 ### Последние изменения · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Agent Bridge.** Через MCP доступны инструменты Edit Poly и 38 команд UV Editor, включая Pack с прогрессом и отменой.
-- **Edit Poly.** История сохраняет повторяемые операции с параметрами и контрольными снимками геометрии.
-- **Viewport Shading.** Восстановлена работа Cavity в Houdini 22.0.466.
+- **UV Editor · Agent Bridge.** Команда `hmodel_uv_snapshot` читает 3D-геометрию, UV, соседство и швы напрямую из ноды UV Editor. Ответы сжимаются, крупные модели можно читать постранично.
 
 ## English
 
@@ -44,6 +42,4 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Agent Bridge.** MCP exposes Edit Poly tools and 38 UV Editor commands, including Pack with progress and cancellation.
-- **Edit Poly.** History stores replayable operations with parameters and geometry checkpoints.
-- **Viewport Shading.** Restored Cavity in Houdini 22.0.466.
+- **UV Editor · Agent Bridge.** The `hmodel_uv_snapshot` command reads 3D geometry, UVs, adjacency, and seams directly from the UV Editor node, with compressed responses and pagination for large meshes.
