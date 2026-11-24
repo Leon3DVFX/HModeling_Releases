@@ -26,7 +26,7 @@
 
 ### Последние изменения · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **UV Editor · Agent Bridge.** Команда `hmodel_uv_snapshot` читает 3D-геометрию, UV, соседство и швы напрямую из ноды UV Editor. Ответы сжимаются, крупные модели можно читать постранично.
+- **Edit Poly · Рабочий пивот.** Пивот по умолчанию ставится в центр габаритов выделения. Удерживайте `D`, чтобы выбрать точку на адаптивном кубике или поставить пивот в мировой ноль кнопкой **Origin**. Через Agent Bridge доступна команда `hmodel_working_pivot`.
 
 ## English
 
@@ -42,4 +42,4 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **UV Editor · Agent Bridge.** The `hmodel_uv_snapshot` command reads 3D geometry, UVs, adjacency, and seams directly from the UV Editor node, with compressed responses and pagination for large meshes.
+- **Edit Poly · Working pivot.** The pivot starts at the center of the selection bounds. Hold `D` to pick a point on the adaptive cube or click **Origin** to place the pivot at world zero. Agent Bridge exposes `hmodel_working_pivot`.
