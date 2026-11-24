@@ -26,7 +26,7 @@
 
 ### Последние изменения · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Edit Poly · Рабочий пивот.** Пивот по умолчанию ставится в центр габаритов выделения. Удерживайте `D`, чтобы выбрать точку на адаптивном кубике или поставить пивот в мировой ноль кнопкой **Origin**. Через Agent Bridge доступна команда `hmodel_working_pivot`.
+- **Edit Poly · Выделение.** `Shift` добавляет соседний полигон и поверх манипулятора. Быстрые клики по разным граням обрабатываются отдельно. Двойная ЦКМ выбирает кольцо рёбер и в режимах Move, Rotate и Scale.
 
 ## English
 
@@ -42,4 +42,4 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Edit Poly · Working pivot.** The pivot starts at the center of the selection bounds. Hold `D` to pick a point on the adaptive cube or click **Origin** to place the pivot at world zero. Agent Bridge exposes `hmodel_working_pivot`.
+- **Edit Poly · Selection.** Shift-click adds a neighboring polygon even over the transform handle. Fast clicks on different faces are handled separately. Double middle-click selects an edge ring in Move, Rotate, and Scale.
