@@ -26,7 +26,8 @@
 
 ### Последние изменения · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Edit Poly · Выделение.** `Shift` добавляет соседний полигон и поверх манипулятора. Быстрые клики по разным граням обрабатываются отдельно. Двойная ЦКМ выбирает кольцо рёбер и в режимах Move, Rotate и Scale.
+- **Edit Poly · Curve Warp.** Деформация компонентов и сплайнов по направляющей. Режим Centerline подходит для труб и хвостов, а Soft Handles передаёт перемещение и вращение соседним ручкам. Доступно через Agent Bridge.
+- **Edit Poly · Last Action.** Единое поведение числовых полей, колеса и фокуса во вьюпорте.
 
 ## English
 
@@ -42,4 +43,5 @@ The macOS builds target Apple Silicon (arm64). The binaries specify macOS 27.2 a
 
 ### Latest changes · Windows x64 · 22.0.466, 22.0.429, 22.0.368
 
-- **Edit Poly · Selection.** Shift-click adds a neighboring polygon even over the transform handle. Fast clicks on different faces are handled separately. Double middle-click selects an edge ring in Move, Rotate, and Scale.
+- **Edit Poly · Curve Warp.** Deform components and splines along a guide. Centerline fits tubes and tails, and Soft Handles shares movement and rotation with nearby handles. Available through Agent Bridge.
+- **Edit Poly · Last Action.** Consistent numeric input, mouse-wheel behavior, and viewport focus.
